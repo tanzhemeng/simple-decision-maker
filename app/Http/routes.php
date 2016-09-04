@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'QuestionController@showForm');
+Route::post('/submit', 'QuestionController@submitForm');
+Route::get('/answer', ['uses' => 'QuestionController@getAnswer', 'as' => 'answer']);
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
