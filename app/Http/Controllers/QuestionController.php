@@ -8,9 +8,8 @@ use Illuminate\Http\Request;
 class QuestionController extends Controller
 {
     /**
-     * Show the profile for the given user.
+     * Display the form
      *
-     * @param  int  $id
      * @return Response
      */
     public function showForm()
@@ -19,9 +18,8 @@ class QuestionController extends Controller
     }
 
     /**
-     * Show the profile for the given user.
+     * Validate and redirect
      *
-     * @param  int  $id
      * @return Response
      */
     public function submitForm(Request $request)
@@ -38,15 +36,12 @@ class QuestionController extends Controller
 
         $response = ['url' => route('answer', $data)];
 
-        // dd($response);
-
         return response()->json($response);
     }
 
     /**
-     * Show the profile for the given user.
+     * Randomize and display the answer to the question
      *
-     * @param  int  $id
      * @return Response
      */
     public function getAnswer(Request $request)
