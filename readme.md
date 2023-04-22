@@ -1,3 +1,23 @@
-# Simple decision maker
+# Simple Decision Maker
 
-A clone of this website http://easydecisionmaker.com/ made with Laravel
+## Description
+A simple project similar to https://easydecisionmaker.com/
+
+- Laravel 10
+- Vue.js 3
+- Tailwind CSS
+- Inertia
+- Vite
+
+## Getting Started
+
+### Installing
+```
+composer install
+```
+```
+npm install
+```
+```
+npm run build
+```
